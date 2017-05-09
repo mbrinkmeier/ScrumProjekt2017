@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @mbrinkmeier
- Sign out
- Unwatch 7
-  Star 0
-  Fork 0 mbrinkmeier/ScrumProjekt2017
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-ScrumProjekt/ 
-README.md
-   or cancel
-    
- Edit file    Preview changes
-1
 # ScrumProjekt
 2
 Projekt zur Erprobung agiler Methoden im Unterricht (SS2017)
