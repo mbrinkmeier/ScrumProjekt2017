@@ -29,7 +29,7 @@ Die Teilnhemer müssen sich beim bearbeiten von Tasks Arbeiten an den folgenden 
 
 Mit dem folgenden Befehl legen Sie eine lokale Arbeitskopie des Repositories an:
 
-> ```git clone https://github.com/mbrinkmeier/ScrumProjekt.git <directory>```
+> ```git clone https://github.com/mbrinkmeier/ScrumProjekt2017.git <directory>```
 
 Die Arbeitskopie wird in ```<directory>``` angelegt.
 
