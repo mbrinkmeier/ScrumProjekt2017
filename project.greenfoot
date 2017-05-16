@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Tue May 16 09:22:13 CEST 2017
+#Tue May 16 09:35:38 CEST 2017
 target1.type=ClassTarget
 project.charset=UTF-8
 mainWindow.height=600
@@ -22,8 +22,8 @@ editor.fx.0.height=0
 package.numDependencies=0
 target1.y=0
 target1.x=0
-mainWindow.width=850
 package.numTargets=1
+mainWindow.width=850
 target1.name=MyWorld
 target1.showInterface=false
 readme.name=@README
