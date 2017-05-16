@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class MyWorld here.
  * 
- * @author ossovski, sklecker, langebrake
+ * @author ossovski, sklecker, langebrake, NordmannDiekbreder
  * @version (a version number or a date)
  * 
  * mbrinkmeier: Weltgeometrie geändert
