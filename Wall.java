@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author sklecker, eossovski
  * @version 19.05.2017 12:56
  */
-public class Wall extends Actor
+public class Wall extends Interactable
 {
     /**
      * Act - do whatever the Wall wants to do. This method is called whenever
@@ -22,5 +22,9 @@ public class Wall extends Actor
        int cellsize = getWorld().getCellSize();
        //System.out.println("Cellsize ist "+cellsize);
        getImage().scale(cellsize,cellsize);
+    }
+    
+    public boolean interact(String keyDirection){
+        return false;
     }
 }

@@ -33,8 +33,9 @@ public class BasicLayout extends World
             addObject(new Wall(),i,0);
         }
         
-         for(int i=1; i<19;i++){ //lower side
+        for(int i=1; i<19;i++){ //lower side
             addObject(new Wall(),i,19);
         }
+       
     }
 }
