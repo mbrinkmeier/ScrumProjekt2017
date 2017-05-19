@@ -14,7 +14,8 @@ public class Level1 extends BasicLayout
      */
     public Level1()
     {
-       super();
-       addObject(new Wall(),10,10);
+        super();
+        String[][] map = super.transferFileToMap("Level1.txt");
+        super.transferMapToLevel(map);
     }
 }
