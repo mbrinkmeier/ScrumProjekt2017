@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Tue May 16 09:35:38 CEST 2017
+#Fri May 19 12:55:52 CEST 2017
 target1.type=ClassTarget
 project.charset=UTF-8
 mainWindow.height=600
@@ -8,10 +8,12 @@ readme.y=10
 readme.x=10
 version=3.0.0
 readme.height=58
+class.Wall.superclass=greenfoot.Actor
 target1.typeParameters=
-world.lastInstantiated=MyWorld
-class.MyWorld.superclass=greenfoot.World
+class.Wall.image=Wall.jpg
+world.lastInstantiated=BasicLayout
 target1.height=50
+class.BasicLayout.superclass=greenfoot.World
 editor.fx.0.y=0
 mainWindow.y=40
 target1.width=80
@@ -26,4 +28,5 @@ package.numTargets=1
 mainWindow.width=850
 target1.name=MyWorld
 target1.showInterface=false
+class.Level1.superclass=BasicLayout
 readme.name=@README
