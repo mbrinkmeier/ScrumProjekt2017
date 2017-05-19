@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Write a description of class Wall here.
  * 
  * @author sklecker, eossovski
- * @version 19.05.2017 12:56
+ * @version 19.05.2017 19:51
  */
 public class Wall extends Interactable
 {
@@ -17,11 +17,11 @@ public class Wall extends Interactable
         // Add your action code here.
     }    
     
-    
     protected void addedToWorld(World world) {
        int cellsize = getWorld().getCellSize();
-       //System.out.println("Cellsize ist "+cellsize);
-       getImage().scale(cellsize,cellsize);
+       GreenfootImage wallPic = getImage();
+       wallPic.scale(cellsize,cellsize);
+       this.setImage(wallPic);
     }
     
     public boolean interact(String keyDirection){

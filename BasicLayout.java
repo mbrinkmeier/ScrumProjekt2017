@@ -11,7 +11,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BasicLayout extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -36,6 +35,17 @@ public class BasicLayout extends World
         for(int i=1; i<19;i++){ //lower side
             addObject(new Wall(),i,19);
         }
-       
+    }
+    public void act(){
+        String keyPressed = Greenfoot.getKey();
+        //um Exception zu vermeiden, Aufruf von equals nicht an keyPressed
+        if ("1".equals(keyPressed)){
+            Greenfoot.setWorld(new Level1());
+        }
+    }
+    
+    public void started(){
+        //Methodenrumpf mit Anweisungen fuellen, die nach der Initialisierung erfolgen muessen
+        showText("Press '1' for Level 1",10,2);
     }
 }

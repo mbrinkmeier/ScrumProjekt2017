@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level1 extends BasicLayout
 {
-
     /*
      * Constructor for objects of class Level1.
      * 
@@ -16,8 +15,6 @@ public class Level1 extends BasicLayout
     public Level1()
     {
        super();
-     
        addObject(new Wall(),10,10);
-        
     }
 }
