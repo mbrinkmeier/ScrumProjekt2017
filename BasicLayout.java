@@ -7,7 +7,7 @@ import java.io.IOException;
  * Write a description of class BasicLayout here.
  * 
  * @author ossovski, sklecker, langebrake, NordmannDiekbreder, SchusterGarske
- * @version (a version number or a date)
+ * @version 20.05.2017 19:44
  * 
  * mbrinkmeier: Weltgeometrie geändert
  * 
@@ -39,6 +39,7 @@ public class BasicLayout extends World
             addObject(new Wall(),i,19);
         }
     }
+    
     public void act(){
         String keyPressed = Greenfoot.getKey();
         //um Exception zu vermeiden, Aufruf von equals nicht an keyPressed
@@ -55,10 +56,22 @@ public class BasicLayout extends World
         showText("Press '1' for Level 1",10,2);
         showText("Press 't' for Testlevel",10,3);
     }
+    
     /**
      * Fügt entsprechend der Markierungen in map die Interactables der Welt hinzu
+     * Ermöglicht es das durch map spezifizierte Level zu spielen
+     * @param map - Karte, die in ein Level umgewandelt wird
      */
     protected void transferMapToLevel(String[][] map){
+        if (map.length != getHeight()){
+            throw new RuntimeException("map hat nicht die richtige Hoehe!");
+        }
+        for (int i = 0; i < map.length; i++){
+            if (map[i].length != getWidth()){
+               throw new RuntimeException("map["+i+"] hat nicht die richtige Breite!");
+            }
+        }
+        //map-Rand wird ignoriert, da sonst z.B. Waende doppelt gesetzt werden
         for (int y = 1; y < map.length-1; y++){
             for (int x = 1; x < map[y].length-1; x++){
                 switch(map[y][x]){
@@ -76,14 +89,23 @@ public class BasicLayout extends World
             }
         }
     }
+    
     /**
-     * liest eine Datei aus dem Ordner "leveldatein" ein, die durch fileName spezifiziert ist und wandelt diese in eine Map um, die zu einem Level verarbeitet werden kann
+     * Liest eine Datei aus dem Ordner "leveldatein" ein,
+     * die durch fileName spezifiziert ist und wandelt 
+     * diese in eine Map um, die zu einem Level 
+     * verarbeitet werden kann.
+     * 
+     * @param fileName - Name der Datei, die verarbeitet werden sollte
+     * @return String[][] - kann mittels transferMapToLevel(map) in ein spielbares Level umgewandelt werden
+     * @throw RuntimeException, falls Datei nicht richtige Zeilen/Spaltenanzahl hat
      */
     protected String[][] transferFileToMap(String fileName){
         fileName = "leveldatein/"+fileName;
         File file = new File(fileName);
-        String[][] map = new String[20][0];
+        String[][] map = new String[getHeight()][0];
         if (!file.canRead() || !file.isFile()){
+            System.out.println("Leveldatei [leveldatein/"+fileName+"] nicht lesbar");
             System.exit(0);
         }
         BufferedReader in = null;
@@ -98,7 +120,13 @@ public class BasicLayout extends World
                     stringzeile[spalte] = ""+charzeile[spalte];
                 }
                 map[zeilennummer] = stringzeile;
+                if (stringzeile.length != getWidth()){
+                    throw new RuntimeException("Datei hat in Zeile "+zeilennummer+" nicht die richtige Anzahl Spalten!");
+                }
                 zeilennummer++;
+            }
+            if (zeilennummer != getHeight()){
+                throw new RuntimeException("Datei hat nicht die richtige Anzahl Zeilen!");
             }
         } catch (IOException e) {
             e.printStackTrace();
