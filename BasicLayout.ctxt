@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=BasicLayout
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BasicLayout\ here.\r\n\ \r\n\ @author\ ossovski,\ sklecker,\ langebrake,\ NordmannDiekbreder,\ SchusterGarske\r\n\ @version\ 20.05.2017\ 19\:44\r\n\ \r\n\ mbrinkmeier\:\ Weltgeometrie\ ge\u00E4ndert\r\n\ \r\n
+comment1.params=
+comment1.target=BasicLayout()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ started()
+comment4.params=map
+comment4.target=void\ transferMapToLevel(java.lang.String[][])
+comment4.text=\r\n\ F\u00FCgt\ entsprechend\ der\ Markierungen\ in\ map\ die\ Interactables\ der\ Welt\ hinzu\r\n\ Erm\u00F6glicht\ es\ das\ durch\ map\ spezifizierte\ Level\ zu\ spielen\r\n\ @param\ map\ -\ Karte,\ die\ in\ ein\ Level\ umgewandelt\ wird\r\n
+comment5.params=fileName
+comment5.target=java.lang.String[][]\ transferFileToMap(java.lang.String)
+comment5.text=\r\n\ Liest\ eine\ Datei\ aus\ dem\ Ordner\ "leveldatein"\ ein,\r\n\ die\ durch\ fileName\ spezifiziert\ ist\ und\ wandelt\ \r\n\ diese\ in\ eine\ Map\ um,\ die\ zu\ einem\ Level\ \r\n\ verarbeitet\ werden\ kann.\r\n\ \r\n\ @param\ fileName\ -\ Name\ der\ Datei,\ die\ verarbeitet\ werden\ sollte\r\n\ @return\ String[][]\ -\ kann\ mittels\ transferMapToLevel(map)\ in\ ein\ spielbares\ Level\ umgewandelt\ werden\r\n\ @throw\ RuntimeException,\ falls\ Datei\ nicht\ richtige\ Zeilen/Spaltenanzahl\ hat\r\n
+numComments=6
