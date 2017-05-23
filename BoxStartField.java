@@ -14,11 +14,12 @@ public class BoxStartField extends Actor
      */
     public void act() 
     {
-        boolean BoxPlace=0;
+        boolean BoxPlaced=false;
         
-        if (start&&!Boxplaced){
-            addObject(Actor Box,getX(),getY());
-            BoxPlace=1;
+        //if (start &&!BoxPlaced){//TODO was ist das?
+        if (!BoxPlaced){
+            getWorld().addObject(new Box(),getX(),getY());
+            BoxPlaced=true;
         }// Add your action code here.
     }    
 }

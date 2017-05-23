@@ -14,13 +14,14 @@ public class TargetField extends Actor
      */
     public void act() 
     {
-        boolean valid=false;
-        while ((world.getObjectsAt(getX(),getY()).equals(Box))){
-            valid=true;}
-        valid=false;    // Add your action code here.
+        //boolean valid=false;
+        //while ((world.getObjectsAt(getX(),getY()).equals(Box))){
+        //    valid=true;}
+        //valid=false;    // Add your action code here.
      
-}
+    }
     public boolean getValid(){
-        return valid;
+        //return valid;
+        return false;
     }
 }

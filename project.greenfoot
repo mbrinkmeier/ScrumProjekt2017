@@ -1,14 +1,17 @@
 #Greenfoot properties
-#Sat May 20 19:15:07 CEST 2017
+#Tue May 23 09:01:29 CEST 2017
 target4.type=ClassTarget
 dependency3.from=BasicLayout
+class.Box.image=gold-ball.png
 target3.height=50
 target5.height=50
 readme.y=10
 dependency3.type=UsesDependency
 readme.x=10
 class.BasicLayout.superclass=greenfoot.World
+class.Player.superclass=greenfoot.Actor
 target4.name=TestWorld
+class.TargetField.superclass=greenfoot.Actor
 target4.typeParameters=
 readme.width=47
 editor.fx.0.width=1696
@@ -31,6 +34,7 @@ dependency5.type=UsesDependency
 editor.fx.0.y=-8
 editor.fx.0.x=-8
 target2.typeParameters=
+class.BoxStartField.superclass=greenfoot.Actor
 dependency3.to=TestWorld
 target3.showInterface=false
 dependency4.to=Wall
@@ -42,8 +46,8 @@ target1.type=ClassTarget
 target1.typeParameters=
 class.Level1.superclass=BasicLayout
 target2.height=50
-target5.y=0
 target4.height=50
+target5.y=0
 target5.x=0
 target1.name=Wall
 target4.y=0
@@ -76,6 +80,7 @@ mainWindow.height=1026
 target2.showInterface=false
 target3.name=Interactable
 class.TestWorld.superclass=BasicLayout
+class.Box.superclass=greenfoot.Actor
 project.charset=UTF-8
 target3.width=90
 target4.showInterface=false
