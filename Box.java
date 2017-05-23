@@ -1,19 +1,39 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Box here.
+ * Write a description of class Kiste here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Box extends Actor
+public class Box extends Interactable
 {
     /**
-     * Act - do whatever the Box wants to do. This method is called whenever
+     * Act - do whatever the Kiste wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
         // Add your action code here.
-    }    
+    }
+    
+    public boolean interact(String keyDirection) {
+        int x = getX();
+        int y = getY();
+        
+        // Key Direcetion links, rechts, oben, unten
+        
+        switch(keyDirection){
+            case "left": 
+                 setLocation(x,y-1); break;
+            case "right":
+                 setLocation(x,y+1); break;
+            case "up":
+                 setLocation(x+1,y); break;
+            case "down":
+                 setLocation(x-1,y); break;
+            default: break;
+        }
+        return true;
+    }
 }
