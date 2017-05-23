@@ -15,7 +15,7 @@ public class Box extends Interactable
     public void act() 
     {
         // Add your action code here.
-<<<<<<< HEAD
+
     }    
     
     protected void addedToWorld(World world) {
@@ -23,7 +23,7 @@ public class Box extends Interactable
        GreenfootImage boxPic = getImage();
        boxPic.scale(cellsize,cellsize);
        this.setImage(boxPic);
-=======
+
     }
     
     public boolean interact(String keyDirection) {
@@ -44,6 +44,5 @@ public class Box extends Interactable
             default: break;
         }
         return true;
->>>>>>> fc1d33e92314db6e7e514d63b5336777eede1d99
     }
 }
