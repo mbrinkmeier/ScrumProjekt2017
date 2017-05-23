@@ -16,4 +16,11 @@ public class Box extends Actor
     {
         // Add your action code here.
     }    
+    
+    protected void addedToWorld(World world) {
+       int cellsize = getWorld().getCellSize();
+       GreenfootImage boxPic = getImage();
+       boxPic.scale(cellsize,cellsize);
+       this.setImage(boxPic);
+    }
 }
