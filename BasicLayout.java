@@ -77,11 +77,11 @@ public class BasicLayout extends World
                 switch(map[y][x]){
                     case "w": addObject(new Wall(),x,y);
                         break;
-                    case "p": //addObject(new Player(),x,y);
+                    case "p": addObject(new Player(x,y),x,y);
                         break;
-                    case "k": //addObject(new Kiste(),x,y);
+                    case "b": addObject(new Box(),x,y);
                         break;
-                    case "f": //addObject(new Finish(),x,y);
+                    case "f": addObject(new TargetField(),x,y);
                         break;
                     default:
                         break;
